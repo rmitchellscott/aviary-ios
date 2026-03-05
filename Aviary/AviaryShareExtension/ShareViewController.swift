@@ -54,6 +54,11 @@ class ShareViewController: UIViewController {
             }
         }
 
+        let hasFileProvider = providers.contains { $0.1 != UTType.url.identifier }
+        if hasFileProvider {
+            providers.removeAll { $0.1 == UTType.url.identifier }
+        }
+
         if providers.isEmpty {
             dismiss()
             return

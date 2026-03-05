@@ -44,6 +44,12 @@ struct ContentView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
+            Text("An [Aviary](https://github.com/rmitchellscott/Aviary) server is required.")
+                .font(.body)
+                .fontWeight(.medium)
+                .foregroundColor(.primary)
+                .tint(.accentColor)
+                .padding(.top, 8)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
